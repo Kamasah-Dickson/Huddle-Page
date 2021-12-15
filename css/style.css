@@ -1,0 +1,199 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --main-font: "Poppins", sans-serif;
+  --second-font: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.social-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.social-1 i {
+  margin: 0 0.7rem;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  padding: 0.8rem;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.social-1 i:hover {
+  color: #e882e8;
+  border-color: #e882e8;
+}
+
+body {
+  background-color: #674baf;
+  background-image: url("../images/bg-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  margin: 2rem 0 3rem 0;
+}
+header .container {
+  width: 90%;
+  margin: 0 auto;
+}
+header .container img {
+  width: 150px;
+  cursor: pointer;
+  display: block;
+}
+
+main .container {
+  width: 90%;
+  margin: 0 auto;
+}
+main .container .row-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .container .row-container .left-img {
+  flex: 1 0 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+main .container .row-container .left-img img {
+  max-width: 100%;
+}
+main .container .row-container .details {
+  text-align: center;
+  max-width: 450px;
+  color: #fff;
+}
+main .container .row-container .details h1 {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main .container .row-container .details p {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 20px;
+}
+main .container .row-container .details .btn {
+  padding: 0.6rem 4rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #674baf;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+  margin-bottom: 3rem;
+}
+main .container .row-container .details .btn:hover {
+  cursor: pointer;
+  background-color: #e882e8;
+}
+
+footer {
+  background-color: #e882e8;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+}
+footer .container .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  header .container {
+    width: 85%;
+  }
+
+  main .container {
+    width: 85%;
+  }
+  main .container .row-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .container .row-container .left-img {
+    flex: 1 0 50%;
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+  main .container .row-container .details {
+    flex: 1 0 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+  main .container .row-container .details h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  main .container .row-container .details p {
+    font-size: 1.1rem;
+    line-height: 25px;
+    text-align: left;
+  }
+  main .container .row-container .details .btn {
+    align-self: flex-start;
+    padding: 0.8rem 3.5rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: #674baf;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+    margin-bottom: 3rem;
+  }
+  main .container .row-container .details .btn:hover {
+    cursor: pointer;
+    background-color: #e882e8;
+  }
+
+  .social-1 {
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+
+  footer {
+    background-color: #e882e8;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  footer .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .container .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */
